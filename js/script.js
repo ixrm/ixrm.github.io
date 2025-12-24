@@ -1,15 +1,28 @@
-// Mobile navbar toggle
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+/* =========================
+   MOBILE NAVBAR TOGGLE
+========================= */
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener("click", () => {
-  navLinks.style.display =
-    navLinks.style.display === "flex" ? "none" : "flex";
-});
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+}
 
-// Hidden section toggle
-function toggleSection(id) {
-  const section = document.getElementById(id);
-  section.style.display =
-    section.style.display === "block" ? "none" : "block";
+/* =========================
+   TOGGLE HIDDEN SECTIONS
+========================= */
+const toggleBtn = document.querySelector('.toggle-btn');
+const hiddenSection = document.querySelector('.hidden');
+
+if (toggleBtn && hiddenSection) {
+  toggleBtn.addEventListener('click', () => {
+    hiddenSection.classList.toggle('hidden');
+
+    toggleBtn.textContent =
+      hiddenSection.classList.contains('hidden')
+        ? 'Show Achievements'
+        : 'Hide Achievements';
+  });
 }
