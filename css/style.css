@@ -194,16 +194,32 @@ footer {
    MOBILE STYLES
 ========================= */
 @media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 32px;
-    background: var(--card);
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 16px;
-    display: none;
+  .home-hero {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    text-align: center;
   }
+
+  .hero-image {
+    order: -1; /* 👈 image goes FIRST */
+    margin-bottom: 24px;
+  }
+
+  .hero-image img {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
 
   .nav-links.show {
     display: flex;
@@ -262,11 +278,24 @@ footer {
 }
 
 .socials a {
-  padding: 10px 14px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-3px);
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
 }
 
 .hero-actions {
