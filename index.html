@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iqram | Student Profile</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -12,83 +12,29 @@
   <nav class="navbar">
     <div class="logo">Iqram</div>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
     </ul>
 
-    <div class="menu-toggle" id="menuToggle">
-      ☰
-    </div>
+    <div class="menu-toggle">&#9776;</div>
   </nav>
 
-  <!-- HOME -->
-  <section id="home" class="section home">
+  <!-- HERO -->
+  <section class="hero">
     <h1>Hi, I’m Iqram</h1>
-    <p class="subtitle">A student exploring maths, logic, and technology.</p>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-
-    <div class="about-card">
-      <h3>Profile</h3>
-      <p>
-        A curious student who enjoys problem-solving, learning new tech,
-        and building meaningful projects step by step.
-      </p>
-    </div>
-
-    <div class="about-card">
-      <h3>Education</h3>
-      <p>Secondary School Student • Science & Mathematics Stream</p>
-    </div>
-
-    <div class="about-card">
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML & CSS (Foundations)</li>
-        <li>JavaScript (Learning)</li>
-        <li>Logical Thinking</li>
-        <li>Self-learning & Research</li>
-      </ul>
-    </div>
-
-    <button class="toggle-btn" onclick="toggleSection('achievements')">
-      View Achievements
-    </button>
-
-    <div id="achievements" class="hidden-section">
-      <h3>Achievements</h3>
-      <p>
-        Academic competitions, self-initiated projects, and continuous
-        learning milestones will live here.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <button class="toggle-btn" onclick="toggleSection('projectList')">
-      Show Projects
-    </button>
-
-    <div id="projectList" class="hidden-section">
-      <div class="project-card">
-        <h3>Student Profile Website</h3>
-        <p>A minimal personal website built with HTML, CSS, and JavaScript.</p>
-      </div>
-    </div>
+    <p>
+      A secondary school student exploring computer science, design,
+      and problem-solving through projects.
+    </p>
+    <a href="projects.html" class="btn">View My Projects</a>
   </section>
 
   <footer>
-    <p>© 2025 Iqram • Built calmly, intentionally.</p>
+    © 2025 Iqram
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
