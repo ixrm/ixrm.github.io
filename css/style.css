@@ -243,3 +243,15 @@ footer {
   margin: auto;
   padding: 100px 32px;
 }
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
