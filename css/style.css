@@ -241,7 +241,7 @@ footer {
   gap: 60px;
   max-width: 1200px;
   margin: auto;
-  padding: 100px 32px;
+  padding: 60px 32px 100px; /* 👈 lifted up */
 }
 
 .hero-text h1 {
