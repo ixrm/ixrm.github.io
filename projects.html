@@ -8,21 +8,23 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
+<header class="navbar-wrapper">
   <nav class="navbar">
-    <div class="logo">Iqram</div>
+    <a href="index.html" class="nav-logo">Iqram</a>
+
+    <span class="menu-toggle" aria-label="Toggle menu">☰</span>
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
     </ul>
-
-    <div class="menu-toggle">&#9776;</div>
   </nav>
+</header>
 
-  <!-- PROJECTS -->
-<section class="projects-header">
+<!-- PROJECTS HEADER -->
+<section class="projects-header fade-in">
   <h1>My Projects</h1>
   <p>
     A curated collection of my work, from web development
@@ -30,13 +32,15 @@
   </p>
 </section>
 
-<section class="projects-grid">
+<!-- PROJECTS GRID -->
+<section class="projects-grid fade-in">
   <div class="project-card">
     <h3>Personal Portfolio Website</h3>
     <p>A modern portfolio built with HTML, CSS and JavaScript.</p>
     <div class="tags">
       <span class="tag">HTML</span>
       <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
     </div>
   </div>
 
@@ -57,14 +61,15 @@
   </div>
 </section>
 
+<!-- MORE PROJECTS -->
 <div class="projects-more">
   <button class="btn primary">Show More Projects</button>
 </div>
 
-  <footer>
-    © 2025 Iqram
-  </footer>
+<footer>
+  © 2025 Iqram
+</footer>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
